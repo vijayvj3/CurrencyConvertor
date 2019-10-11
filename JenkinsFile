@@ -20,6 +20,12 @@ pipeline {
            }
        }
    }
+   stage('Nexus')
+    {
+     steps{
+  nexusArtifactUploader artifacts: [[artifactId: 'Webappp', classifier: '', file: '/var/lib/jenkins/workspace/Dynamic_Free/target/Webappp-0.0.1.war', type: 'war']], credentialsId: '8afb2ff4-fc31-4730-b793-56276ac25cc1', groupId: 'com.wipro.webappp', nexusUrl: 'ec2-18-224-155-110.us-east-2.compute.amazonaws.com:8081/nexus/', nexusVersion: 'nexus2', protocol: 'http', repository: 'devopstraining', version: '0.0.1'        }
+    }
+   
        stage('deploy'){
         steps{
             deploy adapters: [tomcat8(credentialsId: 'ffa910b2-9645-4337-bf03-c81e650547c9', path: '', url: 'http://18.217.186.8:8090/')], contextPath: 'Dynamicpipe', war: '**/*.war'
