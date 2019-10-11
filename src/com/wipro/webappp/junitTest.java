@@ -1,6 +1,7 @@
 package com.wipro.webappp;
  
- 
+ import org.junit.Before;
+import org.junit.Test;
 public class junitTest {
     @Before
     public void prepare() {
