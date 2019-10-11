@@ -24,7 +24,7 @@ pipeline {
    
        stage('deploy'){
         steps{
-            deploy adapters: [tomcat8(credentialsId: 'ffa910b2-9645-4337-bf03-c81e650547c9', path: '', url: 'http://18.189.26.80:8090/')], contextPath: 'dyna_proj', war: '**/*.war'
+            deploy adapters: [tomcat8(credentialsId: 'ffa910b2-9645-4337-bf03-c81e650547c9', path: '', url: 'http://13.127.29.212:8090/')], contextPath: 'dyna_proj', war: '**/*.war'
                   }
        
        }
