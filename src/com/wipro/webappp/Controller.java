@@ -34,7 +34,7 @@ public class Controller extends HttpServlet {
 		if (trigerFrom.equals("check")) {
 		String doll= req.getParameter("num");
 		int res=Integer.parseInt(doll)*70; 
-		out.println("<h1>"+doll+" United States Doller"+" "+ res +" "+"Indian Rupee"+"</h1>");
+		out.println("<h1>"+doll+" United States Dollar"+" "+ res +" "+"Indian Rupee"+"</h1>");
 		out.close();
 		//req.setAttribute("result", res);
 		//req.getRequestDispatcher("new.jsp").forward(req, resp);
