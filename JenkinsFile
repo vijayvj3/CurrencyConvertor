@@ -17,6 +17,11 @@ pipeline {
            }
        }
    }
+   stage("nexus"){
+        steps{
+        nexusArtifactUploader artifacts: [[artifactId: 'Webappp', classifier: '', file: '/var/lib/jenkins/workspace/Dyna_PipelineCK/target/Webappp-0.0.1.war', type: 'war']], credentialsId: 'c764851a-abf2-4235-95bf-42ff2731f750', groupId: 'com.wipro.webappp', nexusUrl: '18.224.155.110:8081/nexus', nexusVersion: 'nexus2', protocol: 'http', repository: 'devopstraining', version: '0.0.1'
+        }
+   }
    
    
        stage('deploy'){
