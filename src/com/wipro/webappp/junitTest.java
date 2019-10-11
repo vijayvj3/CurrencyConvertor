@@ -1,7 +1,7 @@
 package com.wipro.webappp;
  
  
-public class JWebUnitTest {
+public class junitTest {
     @Before
     public void prepare() {
         setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT); 
