@@ -43,7 +43,7 @@ div {
 </head>
 <body>
 <div class="bg-text" align="center">
-	<form action ="controller" name="loginForm" method="post">
+	<form action ="controller"  method="post">
 			<table>
 			<h1> Currency Convertor</h1>
 				<tr><td align="center"><input type="number" size=25  placeholder="Enter dollar Value" name="num" required/></td></tr>
