@@ -39,4 +39,10 @@
       </plugin>
     </plugins>
   </build>
+  <properties>
+    <jdk.version>1.7</jdk.version>
+    <spring.version>4.1.1.RELEASE</spring.version>
+    <jstl.version>1.2</jstl.version>
+    <junit.version>4.11</junit.version>
+</properties>
 </project>
